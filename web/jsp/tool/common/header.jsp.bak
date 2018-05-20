@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/><head>
+ <%
+String filePath= request.getContextPath();
+String cssPath=filePath+"/css";
+String jsPath=filePath+"/js";
+String imagePath=filePath+"/css";
+%>
+ <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:::::db TransPlant::::</title>
+<link href="<%=cssPath%>/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="images/icon.ico" />
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+
+<script type="text/javascript" src="<%=jsPath%>/jquery-1.6.2.min.js"> </script>
+<script type="text/javascript" src="<%=jsPath%>/menu/ddaccordion.js"> </script>
+<script type="text/javascript" src="<%=jsPath%>/menu/multi-level-menu-html.js"></script> 
+ </head>
+asdasdad
+ <body>
+ <table width="100%">
+	<tr>
+		<td>
+			<div id="headerbg">
+			  <div id="headerblank">
+				<div id="header">
+				  <div id="menu">
+					<ul>
+					  <li><a href="#" class="menu">Home</a></li>
+					  <li><a href="#" class="menu">Overview</a></li>
+					  <li><a href="#" class="menu">About Us</a></li>
+					  <li><a href="#" class="menu">Clients</a></li>
+					  <li><a href="#" class="menu">Contact </a></li>
+					</ul>
+				  </div>
+				  <!-- <div id="login">
+					<div id="logintxtblank">
+					  <div id="loginheading">
+						<h4>User Login</h4>
+					  </div>
+					  <div id="username">User Name:</div>
+					  <div id="input">
+						<label>
+						  <input name="textfield" type="text" class="input" id="textfield" value="enter your user name" />
+						</label>
+					  </div>
+					  <div id="password">Password:</div>
+					  <div id="input02">
+						<label>
+						  <input name="textfield2" type="password" class="input" id="textfield2" value="password" />
+						</label>
+					  </div>
+					  <div id="loginbutton"><a href="#" class="login">login</a></div>
+					  <div id="member">Not yet a Member? </div>
+					  <div id="register"><a href="#" class="register">Register Now</a></div>
+					</div>
+				  </div> -->
+				</div>
+			  </div>
+			</div>
+		</td>
+	</tr>
+ </table>
+  
+ </body>
+</html>

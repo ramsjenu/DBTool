@@ -1,0 +1,166 @@
+/* BODY {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; MIN-WIDTH: 800px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #545454; PADDING-TOP: 0px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+H2 SPAN {
+	FONT-VARIANT: small-caps
+}
+P A {
+	FONT-WEIGHT: normal; outline: none
+}
+P A:link {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+P A:visited {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+P A:hover {
+	BACKGROUND: #000; COLOR: #fff; TEXT-DECORATION: none
+}
+P A:active {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+CODE {
+	FONT-SIZE: 1em; FONT-FAMILY: 'andale mono','lucida console','courier new',monospace
+}
+P {
+	MARGIN: 0px 0px 1em; LINE-HEIGHT: 1.6em
+}
+H1 {
+	MARGIN-TOP: 0.6em; FONT-WEIGHT: lighter; FONT-SIZE: 2em; COLOR: #000; FONT-FAMILY: georgia, times new roman, times, georgia, palatino, serif; TEXT-ALIGN: center
+}
+H2 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: lighter; FONT-SIZE: 1.2em; TEXT-TRANSFORM: uppercase; COLOR: #333; FONT-FAMILY: verdana,arial,sans-serif; LETTER-SPACING: 1px; TEXT-ALIGN: center
+}
+H2 SPAN {
+	TEXT-TRANSFORM: none; FONT-VARIANT: small-caps
+}
+TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto 1.5em; BORDER-LEFT: #c1dad7 1px solid; WIDTH: auto; PADDING-TOP: 0px; BORDER-COLLAPSE: collapse
+} */
+/* .cs1 {
+	WIDTH: 30em
+}
+.cs2 {
+	WIDTH: 20em
+}
+.cs1 TD {
+	TEXT-ALIGN: right
+}
+.cs2 TD {
+	TEXT-ALIGN: right
+}
+#scientificNotation {
+	TEXT-ALIGN: right
+}
+CAPTION {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px auto; FONT: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; WIDTH: auto; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+TH {
+	BORDER-RIGHT: #c1dad7 1px solid; PADDING-RIGHT: 12px; BORDER-TOP: #c1dad7 1px solid; PADDING-LEFT: 12px; BACKGROUND: url(../media/bg_header.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; FONT: bold 10px/22px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #4f6b72; PADDING-TOP: 8px; BORDER-BOTTOM: #c1dad7 1px solid; LETTER-SPACING: 1px; TEXT-ALIGN: left
+} */
+/* TD.total {
+	BORDER-TOP-WIDTH: 0px; BORDER-RIGHT: #c1dad7 1px solid; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 1px; TEXT-ALIGN: right
+}
+TH.sortable {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-text {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-date {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-keep {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-date-dmy {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-numeric {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-currency {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortByTwelveHourTimestamp {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortIPAddress {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortEnglishLonghandDateFormat {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortScientificNotation {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortImage {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortFileSize {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortAlphaNumeric {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.sortable-sortEnglishDateTime {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 16px; BACKGROUND: url(../media/bg_header_sortable.jpg) #cae8ea no-repeat; PADDING-BOTTOM: 4px; CURSOR: pointer; PADDING-TOP: 8px
+}
+TH.forwardSort {
+	BACKGROUND: url(../media/bg_header_down.jpg) #cae8ea no-repeat 0px 0px
+}
+TH.reverseSort {
+	BACKGROUND: url(../media/bg_header_up.jpg) #cae8ea no-repeat 0px 0px
+}
+TABLE THEAD TH.forwardSort A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+TABLE THEAD TH.reverseSort A {
+	COLOR: #000; TEXT-DECORATION: none
+} */
+/* TH A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #4f6b72; TEXT-DECORATION: none
+}
+TD A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #239; TEXT-DECORATION: none
+}
+TD IMG {
+	BORDER-RIGHT: #ddd 3px solid; BORDER-TOP: #ddd 3px solid; MARGIN: 0px auto; BORDER-LEFT: #ddd 3px solid; BORDER-BOTTOM: #ddd 3px solid
+}
+TD A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #a84444; BORDER-BOTTOM: #a80000 1px dotted
+} */
+TD { /* BORDER-RIGHT: #c1dad7 1px solid; */
+	/* PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 6px;  */
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	/* FONT: 11px Verdana,"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; */
+	/*  COLOR: #4f6b72; */ /* PADDING-TOP: 6px; */
+	/* BORDER-BOTTOM: #c1dad7 1px solid */
+}
+/* TD.lft {
+	TEXT-ALIGN: left
+} */
+/* TR.alt {
+	BACKGROUND: #f5fafa; COLOR: #797268
+} */
+/* TR[class='alt'] TD {
+	BACKGROUND: url(../media/td_alt.jpg) #f5fafa no-repeat
+}
+TD[class~='alt'] {
+	BACKGROUND: url(../media/col_alt.jpg) #edf3f3 no-repeat
+}
+TBODY TR.alt TD:first-child {
+	FONT-WEIGHT: bold; BACKGROUND: url(../media/bullet2.gif) #f5fafa no-repeat
+}
+TBODY TR TD:first-child {
+	FONT-WEIGHT: bold; BACKGROUND: url(../media/bullet1.gif) #fff no-repeat
+}
+* HTML TR.alt TD {
+	BACKGROUND-COLOR: #f5fafa
+}
+* HTML TR TD.alt {
+	BACKGROUND-COLOR: #edf3f3
+}
+* HTML TR.alt TD.alt {
+	BACKGROUND-COLOR: #edf3f3
+} */
