@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Release') {
       steps {
-        sh 'mvn validate'
         sh 'mvn compile'
         sh 'mvn package'
       }
