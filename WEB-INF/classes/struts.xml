@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.multipart.maxSize" value="53477376" />
+	<package name="tool" namespace="/tool" extends="struts-default">
+		<action name="index">
+			<result name="success">/web/jsp/tool/common/index.jsp</result>
+		</action>
+		<action name="help">
+			<result name="success">/web/jsp/tool/common/help.jsp</result>
+		</action>
+
+		<action name="creatingProject" class="com.tcs.tools.web.action.ProjectCreateAction">
+			<result name="success">/web/jsp/tool/project/CreateProject.jsp
+			</result>
+			<result name="input">/web/jsp/tool/project/CreateProject.jsp</result>
+			<result name="error">/web/jsp/tool/project/CreateProject.jsp</result>
+		</action>
+
+		<action name="modifyProjectInit">
+			<result name="success">/web/jsp/tool/project/ModifyProject.jsp
+			</result>
+		</action>
+
+
+		<action name="modifyProjectDetails"
+			class="com.tcs.tools.web.action.ProjectModifyDetailsAction">
+			<result name="success">/web/jsp/tool/project/ModifyProjectDetails.jsp
+			</result>
+			<result name="input">/web/jsp/tool/project/ModifyProjectDetails.jsp
+			</result>
+			<result name="error">/web/jsp/tool/project/ModifyProjectDetails.jsp
+			</result>
+		</action>
+
+		<action name="modifyProjectSPUpload"
+			class="com.tcs.tools.web.action.ProjectModifySPUploadAction">
+			<result name="success">/web/jsp/tool/project/ModifyProjectSPUpload.jsp
+			</result>
+			<result name="input">/web/jsp/tool/project/ModifyProjectSPUpload.jsp
+			</result>
+			<result name="error">/web/jsp/tool/project/ModifyProjectSPUpload.jsp
+			</result>
+		</action>
+		<action name="modifyProject" class="com.tcs.tools.web.action.ProjectModifyAction">
+			<param name="errorContents">test</param>
+			<result name="success">/web/jsp/tool/project/ModifyProject.jsp
+			</result>
+			<result name="input">/web/jsp/tool/project/ModifyProject.jsp</result>
+			<result name="error">/web/jsp/tool/project/ModifyProject.jsp</result>
+		</action>
+
+		<action name="identifyPattern" class="com.tcs.tools.web.action.IdentifyPatternAction">
+			<result name="success">/web/jsp/tool/spmig/IdentifyPattern.jsp</result>
+			<result name="input">/web/jsp/tool/spmig/IdentifyPattern.jsp</result>
+			<result name="error">/web/jsp/tool/spmig/IdentifyPattern.jsp</result>
+		</action>
+
+		<action name="SPSearch" class="com.tcs.tools.web.action.SearchSPAction">
+			<result name="success">/web/jsp/tool/spmig/SearchSP.jsp</result>
+			<result name="input">/web/jsp/tool/spmig/SearchSP.jsp</result>
+			<result name="error">/web/jsp/tool/spmig/SearchSP.jsp</result>
+		</action>
+		<action name="exportToExcel" class="com.tcs.tools.web.action.SPMigrationReportsAction">
+			<result name="success">/web/jsp/tool/spmig/export_to_excel.jsp
+			</result>
+		</action>
+
+		<action name="spMigrationReports"
+			class="com.tcs.tools.web.action.SPMigrationReportsAction">
+			<result name="spPatternReport">/web/jsp/tool/spmig/Report_stored_procedure_pattern.jsp
+			</result>
+			<result name="detailedSummaryReport">/web/jsp/tool/spmig/Report_CompareDetailed.jsp
+			</result>
+			<result name="compareSummaryReport">/web/jsp/tool/spmig/Report_CompareSummary.jsp
+			</result>
+			<result name="compareSummaryReportSpWiseCount">/web/jsp/tool/spmig/Report_CompareSummary_SpWiseCount.jsp
+			</result>
+			<result name="mismatchCategorySummeryReport">/web/jsp/tool/spmig/Report_mismatchCategorySummery.jsp
+			</result>
+			<result name="detailedMismatchProcWiseReport">/web/jsp/tool/spmig/Report_detailedMismatchProcWise.jsp
+			</result>
+			<result name="manualModificationLogReport">/web/jsp/tool/spmig/Report_ManualModification.jsp
+			</result>
+			<result name="spCallTreeFirstLevelReport">/web/jsp/tool/spmig/Report_SpCallTreeFirstLevelReport.jsp
+			</result>
+			<result name="SearchReport">/web/jsp/tool/spmig/Report_searchResult.jsp
+			</result>
+			<result name="SearchReportString">/web/jsp/tool/spmig/Report_searchResult.jsp
+			</result>
+			
+			
+			<result name="success">/web/jsp/tool/spmig/Report_stored_procedure_pattern.jsp
+			</result>
+		</action>
+
+		<action name="inventoryAnalytics"
+			class="com.tcs.tools.web.action.InventoryAnalyticsAction">
+			<result name="success">/web/jsp/tool/inventory/InventoryAnalytics.jsp
+			</result>
+			<result name="input">/web/jsp/tool/inventory/InventoryAnalytics.jsp
+			</result>
+			<result name="error">/web/jsp/tool/inventory/InventoryAnalytics.jsp
+			</result>
+		</action>
+		
+		<action name="Db2DatabaseAnalytics"
+			class="com.tcs.tools.web.action.Db2DatabaseAnalyticsAction">
+			<result name="success">/web/jsp/tool/inventory/Db2DatabaseAnalytics.jsp
+			</result>
+			<result name="input">/web/jsp/tool/inventory/Db2DatabaseAnalytics.jsp
+			</result>
+			<result name="error">/web/jsp/tool/inventory/Db2DatabaseAnalytics.jsp
+			</result>
+		</action>
+
+		<action name="analyseGaps" class="com.tcs.tools.web.action.AnalyseGapsAction">
+			<result name="success">/web/jsp/tool/spmig/AnalyseGaps.jsp</result>
+			<result name="input">/web/jsp/tool/spmig/AnalyseGaps.jsp</result>
+			<result name="error">/web/jsp/tool/spmig/AnalyseGaps.jsp</result>
+		</action>
+
+		<action name="viewManualModification"
+			class="com.tcs.tools.web.action.ViewManualModificationAction">
+			<result name="success">/web/jsp/tool/spmig/ViewManualModification.jsp
+			</result>
+			<result name="input">/web/jsp/tool/spmig/ViewManualModification.jsp
+			</result>
+			<result name="error">/web/jsp/tool/spmig/ViewManualModification.jsp
+			</result>
+		</action>
+		
+		<action name="SpCallTreeFirstLevel"
+			class="com.tcs.tools.web.action.SpCallTreeFirstLevel">
+			<result name="success">/web/jsp/tool/inventory/SpCallTreeFirstLevel.jsp
+			</result>
+			<result name="input">/web/jsp/tool/inventory/SpCallTreeFirstLevel.jsp
+			</result>
+			<result name="error">/web/jsp/tool/inventory/SpCallTreeFirstLevel.jsp
+			</result>
+		</action>
+		
+
+		<action name="chartReport" class="com.tcs.tools.web.action.ChartReportAction">
+			<result name="success">/web/jsp/tool/inventory/ChartReport.jsp</result>
+			<result name="openChart">/web/jsp/tool/inventory/DisplayChart.jsp</result>
+		</action>
+
+		<action name="invokePrimaryTool" class="com.tcs.tools.web.action.InvokePrimaryToolAction">
+			<result name="success">/web/jsp/tool/spmig/InvokePrimaryTool.jsp
+			</result>
+		</action>
+
+		<action name="idmtIssuesFixing" class="com.tcs.tools.web.action.IdmtIssuesFixingAction">
+			<result name="DEFAULT_COLUMNS">/web/jsp/tool/idmt/IdmtDefaultColumns.jsp
+			</result>
+			<result name="success">/web/jsp/tool/idmt/IdmtDefaultColumns.jsp
+			</result>
+		</action>
+
+		<action name="frontEndMigration"
+			class="com.tcs.tools.web.action.FrontEndCodeMigrationAction">
+			<result name="success">/web/jsp/tool/frontend/FrontEndMigration.jsp
+			</result>
+		</action>
+		<action name="frontEndIdentifyPatterns"
+			class="com.tcs.tools.web.action.FrontEndIdentifyPatternsAction">
+			<result name="success">/web/jsp/tool/frontend/FrontEndIdentifyPatterns.jsp
+			</result>
+		</action>
+		<action name="frontEndMapToTarget"
+			class="com.tcs.tools.web.action.FrontEndMapToTargetAction">
+			<result name="success">/web/jsp/tool/frontend/FrontEndMapToTarget.jsp
+			</result>
+		</action>
+		<action name="frontEndComplieNRelease"
+			class="com.tcs.tools.web.action.FrontEndCompileNReleaseAction">
+			<result name="success">/web/jsp/tool/frontend/FrontEndCompileNRelease.jsp
+			</result>
+		</action>
+
+
+		<action name="feCodeMigrationReports"
+			class="com.tcs.tools.web.action.FECodeMigrationReportsAction">
+			<result name="feDsqlPatternReport">/web/jsp/tool/fecodemig/Report_FrontEndDsqlPattern.jsp
+			</result>
+			<result name="feMapToTargetReport">/web/jsp/tool/fecodemig/Report_FrontEndMapToTarget.jsp
+			</result>
+
+		</action>
+
+		<action name="statusDisplayAjax" class="com.tcs.tools.web.action.StatusDisplayAjaxAction">
+			<result name="success">/web/jsp/tool/spmig/StatusDisplayAjax.jsp
+			</result>
+			<result name="init">/web/jsp/tool/spmig/StatusDisplayAjax.jsp
+			</result>
+			<result name="over">/web/jsp/tool/spmig/StatusDisplayAjax.jsp
+			</result>
+			<result name="finalStatusDisplay">
+				/web/jsp/tool/spmig/StatusDisplayAjax.jsp<!-- /web/jsp/tool/spmig/Report_FinalStatusDisplay.jsp -->
+			</result>
+		</action>
+
+		<action name="validateDataMigration"
+			class="com.tcs.tools.web.action.ValidateDataMigrationAction">
+			<result name="success">/web/jsp/tool/datamig/ValidateDataMigration.jsp
+			</result>
+		</action>
+
+
+		<action name="postProcessorIdentifyPattern" class="com.tcs.tools.web.action.PostProcessorAction">
+			<result name="success">/web/jsp/tool/postprocessor/PostProcessorIdentifyPatterns.jsp
+			</result>
+			<result name="openMainTool">/web/jsp/tool/postprocessor/PostProcessorMainTool.jsp
+			</result>
+			<result name="projectExlporer">/web/jsp/tool/postprocessor/PostProcessorProjectExplorer.jsp
+			</result>
+			<result name="enterPatterns">/web/jsp/tool/postprocessor/PostProcessorTool.jsp
+			</result>
+			<result name="enterPatternsFrameMode">/web/jsp/tool/postprocessor/PostProcessorToolFrame.jsp
+			</result>
+			<result name="changeTracker">/web/jsp/tool/postprocessor/PostProcessorChangeTracker.jsp
+			</result>
+
+
+		</action>
+		<action name="addingFeedback" class="com.tcs.tools.web.action.AddFeedbackAction">
+			<result name="success">/web/jsp/tool/common/addfeedback.jsp
+			</result>
+			<result name="viewFeedback">/web/jsp/tool/common/viewfeedback.jsp
+			</result>
+			<result name="input">/web/jsp/tool/common/addfeedback.jsp</result>
+			<result name="error">/web/jsp/tool/common/addfeedback.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="project" namespace="/project" extends="struts-default">
+
+
+
+		<action name="modifyProject" class="com.tcs.tools.web.action.ProjectModifyAction">
+			<param name="errorContents">test</param>
+			<result name="success">/web/jsp/tool/project/ModifyProject.jsp
+			</result>
+			<result name="input">/web/jsp/tool/project/ModifyProject.jsp</result>
+			<result name="error">/web/jsp/tool/project/ModifyProject.jsp</result>
+		</action>
+
+		<action name="index">
+			<result name="success">/web/jsp/tool/project/ModifyProject.jsp
+			</result>
+		</action>
+		
+		
+
+		<!-- <action name="Login_*" method="{1}" class="example.Login"> <result 
+			name="input">/example/Login.jsp</result> <result type="redirect-action">Menu</result> 
+			</action> <action name="*" class="example.ExampleSupport"> <result>/example/{1e}.jsp</result> 
+			</action> -->
+
+		<!-- Add actions here -->
+	</package>
+    <!-- Add packages here -->
+
+</struts>

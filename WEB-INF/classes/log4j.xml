@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="logfile" class="org.apache.log4j.FileAppender">
+		<param name="file" value="app.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n" />
+		</layout>
+	</appender>
+	<appender name="myLogfile" class="org.apache.log4j.FileAppender">
+		<param name="file" value="C:\arun\app_upload\logs\myFile.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d-%5p(%F:%L)-%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %5p %c{1} - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="fileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="append" value="true" />
+		<param name="file" value="C:/DBTransplant/logs/app_logs/info.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss:SSS} - %p - %C{1} - %m%n" />
+		</layout>
+	</appender>
+
+
+
+	<logger name="ToolLogger">
+		<level value="INFO" />
+		<appender-ref ref="fileAppender" />
+
+
+	</logger>
+
+	<root>
+		<level value="ERROR" />
+		<appender-ref ref="logfile" />
+		<appender-ref ref="consoleAppender" />
+	</root>
+</log4j:configuration> 

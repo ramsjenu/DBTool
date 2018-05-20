@@ -1,0 +1,26 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+       "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+
+	<field name="projectName">
+		<field-validator type="requiredstring">
+			<message>Project Name is required.</message>
+		</field-validator>
+	</field>
+	<field name="sourceDBType">
+		<field-validator type="requiredstring">
+			<message>Source DB Type is required.</message>
+		</field-validator>
+	</field>
+	<field name="targetDBType">
+		<field-validator type="requiredstring">
+			<message>Target DB Type is required.</message>
+		</field-validator>
+	</field>
+	<field name="fileLocation">
+		<field-validator type="requiredstring">
+			<message>File Location is required.</message>
+		</field-validator>
+	</field>
+
+</validators>
